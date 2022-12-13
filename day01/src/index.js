@@ -1,4 +1,5 @@
 import fs from 'fs/promises'
+const PATH = './mock/dev.txt'
 
 const handleDataCollection = (dataArr) => {
 	let count = dataArr.length
@@ -53,4 +54,4 @@ const start = (pathFile) => {
 	readFile(pathFile)
 }
 
-export default start
+start(PATH)
